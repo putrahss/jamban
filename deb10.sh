@@ -193,7 +193,7 @@ apete_apdet() {
     rm -rf /root/vnstat-2.6 >/dev/null 2>&1
     source <(curl -sL https://github.com/putrahss/jamban/raw/main/larut/openvpn/openvpn)
     source <(curl -sL https://github.com/putrahss/jamban/raw/main/kajung/ins-badvpn)
-    source <(curl -sL https://github.com/putrahss/jamban/raw/main/JB7/tunlp)
+    source <(curl -sL https://github.com/julakhss/julakhss/raw/main/JB7/tunlp)
     ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
     if [[ $(cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g') == "ubuntu" ]]; then
         # "Setup Dependencies $(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')"
