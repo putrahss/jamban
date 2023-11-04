@@ -1,7 +1,7 @@
 cat >/etc/caddy/Caddyfile <<-EOF
 $domain:443
 {
-    tls bhoikfostyahya@gmail.com
+    tls putrameratus2@gmail.com
     encode gzip
 
 
@@ -39,7 +39,7 @@ cat >/etc/caddy/vmess <<-EOF
 @ws_path {
 path /worryfree
 path /xray
-path /yha
+path /julak
 path /*
 
 }
