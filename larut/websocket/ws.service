@@ -1,6 +1,6 @@
 [Unit]
-Description=Python Proxy FighterTunnel
-Documentation=https://t.me/yha_bot
+Description=Python Proxy JulakBantur
+Documentation=https://t.me/Cibut2d
 After=network.target nss-lookup.target
 
 [Service]
