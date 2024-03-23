@@ -144,21 +144,6 @@ make_folder_xray() {
 
 }
 
-#add_name() {
-#clear
-#echo -e  "${BLUE}┌──────────────────────────────────────────┐${NC}"
-#echo -e  "${YELLOW}|       MASUKKAN NAMA AUTHOR        |${NC}"
-#echo -e  "${BLUE}└──────────────────────────────────────────┘${NC}"
-#echo " "
-#read -rp "Masukan Nama Anda Disini : " -e pp
-#rm -rf /etc/profil
-#echo "$pp" > /etc/profil
-#echo ""
-#clear
-#author=$(cat /etc/profil)
-#echo ""
-#}
-
 add_domain() {
 echo -e ""
 clear
@@ -178,11 +163,11 @@ echo $domain > /etc/xray/domain
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget https://raw.githubusercontent.com/julakhss/julakhss/main/JB7/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/putrahss/jamban/main/larut/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
-wget https://raw.githubusercontent.com/julakhss/julakhss/main/JB7/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/putrahss/jamban/main/larut/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 rm -rf lite.sh
 clear
@@ -337,7 +322,7 @@ install_cert() {
 
 ins_menu() {
 clear
-    wget -q https://raw.githubusercontent.com/bagusid93/hss/main/menu.zip
+    wget -q https://raw.githubusercontent.com/putrahss/jamban/main/larut/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
@@ -350,7 +335,7 @@ wget -q https://raw.githubusercontent.com/julakhss/julakhss/main/JB7/tm.sh &&  c
 }
 
 ins_udp() {
-wget -q https://sc2.scvps.biz.id/rabah/udp-custom.sh &&  chmod +x udp-custom.sh && ./udp-custom.sh
+wget -q https://sc1.scvps.biz.id/plugins/udp-custom.sh &&  chmod +x udp-custom.sh && ./udp-custom.sh
 }
 
 #ins_swap() {
@@ -511,7 +496,7 @@ restart_system() {
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>⚠️ INSTALL AUTOSCRIPT JB-04 LITE ⚠️</b>
+<b>⚠️ INSTALL AUTOSCRIPT JB-V4 LITE ⚠️</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
