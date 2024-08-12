@@ -378,11 +378,11 @@ END
 		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 		0 5 * * * root /sbin/reboot
 	END
-    cat >/etc/cron.d/hps_otm <<-END
-		SHELL=/bin/sh
-		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-		*/2 * * * * root /usr/local/sbin/kills
-	END
+    #cat >/etc/cron.d/hps_otm <<-END
+		#SHELL=/bin/sh
+		#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+		#*/2 * * * * root /usr/local/sbin/kills
+	#END
     service cron restart
     cat >/home/daily_reboot <<-END
 		5
