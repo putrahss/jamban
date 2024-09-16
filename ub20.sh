@@ -134,6 +134,8 @@ add_domain() {
     read -p "Input Domain : " domain
     if [[ ${domain} ]]; then
         echo $domain >/etc/xray/domain
+	echo $domain >/etc/v2ray/domain
+	echo $domain >/root/domain
     else
         echo -e " ${RED}Please input your Domain${FONT}"
         echo -e ""
