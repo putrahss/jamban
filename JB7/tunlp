@@ -1,5 +1,5 @@
 #!/bin/bash
-
+wget -q https://raw.githubusercontent.com/xssh99/cip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/local/sbin/quota "https://raw.githubusercontent.com/putrahss/jamban/main/JB7/quota"
 chmod +x /usr/local/sbin/quota
