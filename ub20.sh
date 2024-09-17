@@ -432,9 +432,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user sc.fightertunnel@gmail.com
-from sc.fightertunnel@gmail.com
-password uxiwsmmaladzsywx
+user ftvpn@gmail.com
+from fightertunnel@gmail.com
+password zlmthivqlsbypost
 logfile ~/.msmtp.log
 
 EOF
