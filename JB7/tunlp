@@ -1,20 +1,17 @@
 #!/bin/bash
 
-clear
-print_install "Install Service Limit IP"
-wget raw.githubusercontent.com/cibut2d/cip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
-wget -q -O /usr/local/sbin/quota "https://sc3.scvps.biz.id/limit/quota"
+wget -q -O /usr/local/sbin/quota "https://raw.githubusercontent.com/putrahss/jamban/main/JB7/quota"
 chmod +x /usr/local/sbin/quota
 cd /usr/local/sbin/
 sed -i 's/\r//' quota
 cd
-wget -q -O /usr/bin/limit-ip "https://sc3.scvps.biz.id/limit/limit-ip"
+wget -q -O /usr/bin/limit-ip "https://raw.githubusercontent.com/putrahss/jamban/main/JB7/limit-ip"
 chmod +x /usr/bin/*
 cd /usr/bin
 sed -i 's/\r//' limit-ip
 clear
-wget -q -O /usr/bin/limit-ip-ssh "https://sc3.scvps.biz.id/limit/limit-ip-ssh"
+wget -q -O /usr/bin/limit-ip-ssh "https://raw.githubusercontent.com/putrahss/jamban/main/JB7/limit-ip-ssh"
 chmod +x /usr/bin/*
 cd /usr/bin
 sed -i 's/\r//' limit-ip-ssh
@@ -89,8 +86,8 @@ EOF
 systemctl daemon-reload
 systemctl restart trip
 systemctl enable trip
-#SERVICE LIMIT QUOTA
 
+#SERVICE LIMIT QUOTA
 #SERVICE VMESS
 cat >/etc/systemd/system/qmv.service << EOF
 [Unit]
