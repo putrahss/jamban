@@ -47,10 +47,10 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget "https://raw.githubusercontent.com/putrahss/jamban/main/menu.zip"
+    wget "https://raw.githubusercontent.com/putrahss/jamban/main/larut/menu.zip"
     unzip menu.zip
     chmod +x menu/*
-    mv menu/* /usr/local/sbin
+    mv menu/* /usr/bin
     rm -rf menu
     rm -rf menu.zip
     rm -rf update.sh
