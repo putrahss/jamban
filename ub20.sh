@@ -79,7 +79,6 @@ make_folder_xray() {
     rm -rf /etc/shadowsocks/.shadowsocks.db
     rm -rf /etc/ssh/.ssh.db
     rm -rf /etc/bot/.bot.db
-    mkdir -p /etc/bot
     rm -rf /etc/xray/city
     rm -rf /etc/xray/isp
     mkdir -p /etc/xray
@@ -98,6 +97,7 @@ make_folder_xray() {
     mkdir -p /etc/limit/vless
     mkdir -p /etc/limit/trojan
     mkdir -p /etc/limit/ssh
+    mkdir -p /etc/bot
     chmod +x /var/log/xray
     touch /etc/xray/domain
     touch /var/log/xray/access.log
@@ -107,6 +107,7 @@ make_folder_xray() {
     touch /etc/trojan/.trojan.db
     touch /etc/shadowsocks/.shadowsocks.db
     touch /etc/ssh/.ssh.db
+    touch /etc/bot/.bot.db
     echo "& plughin Account" >>/etc/vmess/.vmess.db
     echo "& plughin Account" >>/etc/vless/.vless.db
     echo "& plughin Account" >>/etc/trojan/.trojan.db
